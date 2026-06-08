@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+ /   <head>
+        <meta charset="UTF-8" />
+        <style src="./impress-common.css"></style>
+        <style>
+            body {
+                background-color: wheat;
+            }
+
+            .step.present, .step.past {
+                opacity: 1;
+            }
+
+            .swap-step {
+                opacity: 0;
+            }
+
+            .swap-step.present {
+                opacity: 1;
+            }
+            .swap-step.past {
+                opacity: 0;
+            }
+
+            .box {
+                display: block;
+                width: 1600px;
+                height: 1200px;
+                padding: 30px 50px;
+                background-color: white;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+                border: 1px solid rgba(0, 0, 0, .3);
+                border-radius: 20px;
+                text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+                font-family: Andika, Overpass, Liberation, Nimbus Sans, Helvetica, sans-serif;
+                font-size: 40px;
+                color: black;
+            }
+
+            .bigimg {
+                text-align: center;
+                width: 1300px;
+                max-height: 1000px;
+            }
+
+            table {
+                width: 100%;
+            }
+
+            table.fixed {
+                table-layout: fixed;
+            }
+
+            td, th {
+                padding: 20px;
+                border-radius: 10px;
+            }
+
+            .col1 {
+                background-color: powderblue;
+            }
+
+            .col2 {
+                background-color: palegreen;
+            }
+
+            .col3 {
+                background-color: papayawhip;
+            }
+
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 16px;
+            }
+        </style>
+        
+        <title>Neuropaliativní péče</title>
+    </head>
+    <body class="impress-not-supported">
+        <div id="impress" data-width="2000" data-height="1500"  data-transition-duration="1000">
+
+            <div class="step box" data-x="0" data-y="0">
+                <h1>Paliativní péče v neurologii</h1>
+                <h2>Pavel Dušek</h2>
+                <p>Neurologická klinika 1. LF UK a VFN</p>
+                <p>Klinika paliativní medicíny 1. LF UK a VFN</p>
+                <p><a href="https://www.github.com/PavelDusek/NePal/">www.github.com/PavelDusek/NePal/</a></p>
+                <p>Creative Commons Attribution Share Alike 4.0 International (CC-BY-SA)</p>
+            </div>
+
+            <div class="step box" data-x="2500" data-y="0">
+                <h1>Osnova</h1>
+                <ul>
+                    <li>symptomy, situace a diagnózy</li>
+                    <li>trajektorie neurologických omocnění</li>
+                    <li>prognostická nejistota</li>
+                    <li>kapacita pro rozhodování</li>
+                    <li>specifické diagnózy</li>
+                    <li>prostor pro otázky</li>
+                </ul>
+            </div>
+
+            <div class="step box" data-x="5000" data-y="0">
+                <h1>Symptomy</h1>
+                <img class="bigimg" src="img/brain_regions.svg" alt="léze mozku" />
+                    <p>Difuzní příznaky: poruchy paměti, exekutivní dysfunkce, apraxie, behaviorální a psychiatrické příznaky, poruchy vědomí</p>
+                    <p>Extrapyramidové poruchy hybnosti: akineze/hypokineze, rigidita, dystonie, třes, chorea/atetóza/balismus, myoklonus</p>
+            </div>
+
+            <div class="step box" data-x="7500" data-y="0">
+                <h1>Syndromy</h1>
+                <ul>
+                    <li>poruchy vědomí, přemýšlení a chování</li>
+                    <li>poruchy hybnosti</li>
+                    <li>poruchy komunikace</li>
+                    <li>smyslové poruchy</li>
+                    <li>záchvatovité symptomy</li>
+                    <li>autonomní poruchy</li>
+                    <li>bolest</li>
+                </ul>
+            </div>
+
+            <div class="step box" data-x="12500" data-y="0">
+                <h1>Trajektorie nádorového onemocnění</h1>
+                <img class="bigimg" src="img/Trajektorie_nemoci1.svg" alt="Trajektorie nemoci 1"/>
+            </div>
+            <div class="step swap-step box" data-x="12500" data-y="0">
+                <h1>Trajektorie nádorového onemocnění</h1>
+                <ul>
+                    <li>metastatické postižení nervového systému</li>
+                    <li>glioblastom</li>
+                    <li>high grade gliom</li>
+                </ul>
+            </div>
+
+            <div class="step box" data-x="15000" data-y="0">
+		<h1>Trajektorie relabujícího remitujícího onemocnění</h1>
+                <img class="bigimg" src="img/Trajektorie_nemoci2.svg" alt="Trajektorie nemoci 2"/>
+            </div>
+            <div class="step swap-step box" data-x="15000" data-y="0">
+                <h1>Trajektorie relabujícího remitujícího onemocnění</h1>
+                <ul>
+                    <li>roztroušená skleróza</li>
+                    <li>myasthenia gravis</li>
+                    <li>chronická inflamatorní demyelinizační polyneuropatie</li>
+                </ul>
+            </div>
+
+            <div class="step box" data-x="12500" data-y="1600">
+                <h1>Trajektorie neurodegenerativního onemocnění</h1>
+                <img class="bigimg" src="img/Trajektorie_nemoci3.svg" alt="Trajektorie nemoci 3"/>
+            </div>
+            <div class="step swap-step box" data-x="12500" data-y="1600">
+                <h1>Trajektorie neurodegenerativního onemocnění</h1>
+                <ul>
+                    <li>Alzheimerova nemoc</li>
+                    <li>Parkinsonova nemoc</li>
+                    <li>frontotemporální lobární degenerace</li>
+                    <li>progresivní supranukleární obrna</li>
+                    <li>Lewy-body disease</li>
+                    <li>multisystémová atrofie</li>
+                    <li>amyotrofická laterální skleróza</li>
+                    <li>Duchennova/Beckerova muskulární dystrofie</li>
+                    <li>spinální muskulární atrofie</li>
+                    <li>hereditární spastická paraparéza</li>
+                    <li>spinocerebelární atrofie</li>
+                    <li>prionová onemocnění</li>
+                    <li>neurologické postižení u AIDS</li>
+                </ul>
+            </div>
+
+            <div class="step box" data-x="15000" data-y="1600">
+                <h1>Trajektorie ložiskového poranění</h1>
+                <img class="bigimg" src="img/Trajektorie_nemoci4.svg" alt="Trajektorie nemoci 4"/>
+            </div>
+            <div class="step swap-step box" data-x="15000" data-y="1600">
+                <h1>Trajektorie ložiskového poranění</h1>
+                <ul>
+                    <li>ischemická cévní mozková příhoda</li>
+                    <li>intracerebrální krvácení</li>
+                    <li>subarachnoidální kvácení</li>
+                    <li>kraniotrauma</li>
+                    <li>neuroinfekce</li>
+                    <li>status epilepticus</li>
+                    <li>Guillain-Barré, AIDP</li>
+                    <li>míšní ischémie</li>
+                </ul>
+            </div>
+
+            <div class="step" data-x="13725" data-y="800" data-scale=2 id="trajektorie">
+            </div>
+
+            <div class="step box" data-x="22500" data-y="0">
+                <h1>Individuální trajektorie</h1>
+                <img class="bigimg" src="img/Trajektorie_nemoci_individualni.svg" alt="Individuální trajektorie nemoci 4"/>
+            </div>
+
+            <div class="step box" data-x="25000" data-y="0">
+                <h1>Přiměřenost péče</h1>
+                <table class="fixed">
+                    <tr>
+                        <td class="col1">Prognostikace</td>
+                        <td class="col2">Kapacita k rozhodování <br/ >Zástupné rozhodování<br/ > Informační potřeby<br/ > zpracování emocí</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Terapeutický pokus?</td>
+                        <td class="col2">Orientace v nemoci<br/ > Prognostické uvědomění<br/ > Terapeutické očekávání</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Individuální prognóza</td>
+                        <td class="col2">Životní hodnoty a preference<br/ > (v kontextu nemoci)</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="step box" data-x="27500" data-y="0">
+                <h1>Kompetence k rozhodování</h1>
+                <table class="fixed">
+                    <tr>
+                        <th class="col1">Instrument</th>
+                        <th class="col2">Princip</th>
+                        <th class="col3">Délka administrace</th>
+                    </tr>
+                    <tr>
+                        <td class="col1">MacCAT-T</td>
+                        <td class="col2">rozhodování, porozumění, zhodnocení, rozum</td>
+                        <td class="col3">10–15 minut</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">CCTI</td>
+                        <td class="col2">rozhodování, porozumění, zhodnocení, rozum</td>
+                        <td class="col3">20–25 minut</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">HCAT</td>
+                        <td class="col2">porozumění</td>
+                        <td class="col3">10 minut</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">ACE</td>
+                        <td class="col2">rozhodování, porozumění, zhodnocení</td>
+                        <td class="col3">15 minut</td>
+                    </tr>
+                </table>
+                <p><a href="https://doi.org/10.1016/j.ncl.2010.10.001">Lim 2011. Neurology Clinics.</a></p>
+            </div>
+
+            <div class="step box" data-x="30000" data-y="0" id="curves">
+                <table>
+                    <tr>
+                        <td class="col1">C</td>
+                        <td class="col2">Choose and communicate</td>
+                        <td class="col3">Can the patient communicate a choice?</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">U</td>
+                        <td class="col2">Understand</td>
+                        <td class="col3">Does the patient understand the risks, benefits, alternatives, and consequences of the decision?</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">R</td>
+                        <td class="col2">Reason</td>
+                        <td class="col3">Is the patient able to reason and provide logical explanations for the decision?</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">V</td>
+                        <td class="col2">Value</td>
+                        <td class="col3">Is the decision in accordance with the patients value system?</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">E</td>
+                        <td class="col2">Emergency</td>
+                        <td class="col3">Is there a serious and imminent risk to the patient's well-being?</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">S</td>
+                        <td class="col2">Surrogate</td>
+                        <td class="col3">Is there a surrogate decision-maker available?</td>
+                    </tr>
+                </table>
+
+                <p><a href="https://doi.org/10.1378/chest.09-1133">Chow 2010. Chest.</a><p>
+                <p>Časné zjištění hodnot, dříve vyslovené přání, osoba blízká dle pacienta, či dle <a href="https://www.zakonyprolidi.cz/cs/2012-89?text=22">zákona</a>.</p>
+            </div>
+
+            <div class="step box" data-x="32500" data-y="0">
+            </div>
+
+            <div class="step box" data-x="35000" data-y="0">
+            </div>
+
+            <div class="step box" data-x="37500" data-y="0">
+            </div>
+
+            <div class="step box" data-x="40000" data-y="0">
+            </div>
+
+            <div class="step box" data-x="42500" data-y="0">
+            </div>
+
+            <div class="step box" data-x="45000" data-y="0">
+            </div>
+
+            <div class="step box" data-x="47500" data-y="0">
+            </div>
+
+            <div class="step box" data-x="50000" data-y="0">
+            </div>
+
+            <div class="step box" data-x="52500" data-y="0">
+            </div>
+
+            <div class="step box" data-x="55000" data-y="0">
+            </div>
+
+            <div class="step box" data-x="57500" data-y="0">
+            </div>
+
+            <div class="step box" data-x="60000" data-y="0">
+            </div>
+
+            <div class="step box" data-x="62500" data-y="0">
+            </div>
+
+            <div class="step box" data-x="65000" data-y="0">
+            </div>
+
+            <div class="step box" data-x="67500" data-y="0">
+            </div>
+
+            <div class="step box" data-x="70000" data-y="0">
+            </div>
+
+            <div class="step box" data-x="72500" data-y="0">
+            </div>
+
+            <div class="step box" data-x="75000" data-y="0">
+            </div>
+
+            <div class="step box" data-x="77500" data-y="0">
+            </div>
+
+            <div class="step box" data-x="80000" data-y="0">
+            </div>
+
+            <div class="step box" data-x="82500" data-y="0">
+            </div>
+
+            <div class="step box" data-x="85000" data-y="0">
+            </div>
+
+            <div class="step box" data-x="87500" data-y="0">
+            </div>
+
+            <div class="step box" data-x="90000" data-y="0">
+            </div>
+
+            <div class="step box" data-x="92500" data-y="0">
+            </div>
+
+            <div class="step box" data-x="95000" data-y="0">
+            </div>
+
+            <div class="step box" data-x="97500" data-y="0">
+            </div>
+
+            <div class="step box" data-x="100000" data-y="0">
+            </div>
+
+            <div class="step box" data-x="102500" data-y="0">
+            </div>
+
+            <div class="step box" data-x="105000" data-y="0">
+            </div>
+
+            <div class="step box" data-x="107500" data-y="0">
+            </div>
+
+            <div class="step box" data-x="110000" data-y="0">
+            </div>
+
+            <div class="step box" data-x="112500" data-y="0">
+            </div>
+
+            <div class="step box" data-x="115000" data-y="0">
+            </div>
+
+            <div class="step box" data-x="117500" data-y="0">
+            </div>
+
+            <div class="step box" data-x="120000" data-y="0">
+            </div>
+
+            <div class="step box" data-x="122500" data-y="0">
+            </div>
+
+            <div class="step box" data-x="125000" data-y="0">
+            </div>
+
+            <div class="step box" data-x="127500" data-y="0">
+                <h1>PN</h1>
+            </div>
+            
+            <div class="step box" data-x="127500" data-y="0">
+                <h1>MS</h1>
+            </div>
+
+            <div class="step box" data-x="127500" data-y="0">
+                <h1>ALS</h1>
+            </div>
+        </div>
+        <div id="impress-toolbar"></div>
+        <div id="impress-progressbar"></div><div></div>
+        <div id="impress-progress"></div>
+        <div id="impress-help"></div>
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/impress.js"></script>
+        <!-- <script src="extras/rel/rel.js"></script> --->
+        <script>impress().init();</script>
+    </body>
+</html>
